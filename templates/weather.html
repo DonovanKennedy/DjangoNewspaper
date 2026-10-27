@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Current Weather</h1>
+{% if error %}
+<p>{{ error }}</p>
+{% else %}
+<p>Temperature: {{ weather.temperature_2m }}°F</p>
+<p>Wind: {{ weather.wind_speed_10m }} mph</p>
+{% endif %}
+{% endblock content %}
